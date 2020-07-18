@@ -1,0 +1,40 @@
+@import ../../index.sass
+  
+.header
+  height: 57px
+  background-color: $colorText
+  color: $colorWhite
+  display: flex
+  &-logo, &-right-wrap
+    line-height: 57px
+  &-logo
+  &-right-wrap
+    font-family: fontawesome
+    font-size: 20px
+    margin-left: auto
+  &-cart,&-menu
+    display: inline-block
+    margin: 0 10px
+  &-menu
+    border: 1px solid $colorWhite
+    border-radius: 5px
+    padding: 10px
+    line-height: 1rem
+    color: #colorWhite
+  &-cart
+    position: relative
+.cart-count-wrap
+  position: absolute
+  top: 10px
+  left: 10px
+  width: 20px
+  height: 20px
+  border: none
+  border-radius: 100%
+  background-color: $colorBlueLight
+  line-height: 1rem
+  .cart-count
+    position: absolute
+    font-size: 15px
+    right: 6px
+    top: 2px
