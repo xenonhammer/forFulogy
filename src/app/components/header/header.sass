@@ -1,0 +1,70 @@
+@import ../../../index.sass
+
+.header
+  height: 57px
+  background-color: $colorText
+  color: $colorWhite
+  display: flex
+  &-logo, &-right-wrap
+    line-height: 57px
+  &-logo
+    cursor: pointer
+    svg
+      margin: 12px 0 0 25px
+      width: 60%
+      height: auto
+
+  &-right-wrap
+    font-family: fontawesome
+    font-size: 20px
+    margin-left: auto
+  &-cart,&-menu
+    display: inline-block
+    margin: 0 10px
+    cursor: pointer
+  &-menu
+    border: 1px solid #000000
+    border-radius: 5px
+    padding: 10px
+    line-height: 1rem
+    color: $colorWhite
+    cursor: pointer
+  &-cart
+    position: relative
+  &-nav
+    z-index: 1
+    position: absolute
+    top: 57px
+    right: 0
+    background-color: $colorDark
+  &-nav-items
+    padding: 0
+    margin: 0
+    list-style: none
+  &-nav-item
+    padding: 22.5px 50px
+    text-align: center
+    font-size: 14px
+    vertical-align: middle
+    border-top: 1px solid #282828
+    cursor: pointer
+    transition: background-color 0.1s ease
+    &:hover
+      background-color: $colorBlueLight
+    &:active
+      background-color: $colorDark  
+.cart-count-wrap
+  position: absolute
+  top: 13px
+  left: 15px
+  width: 15px
+  height: 15px
+  border: none
+  border-radius: 100%
+  background-color: $colorBlueLight
+  line-height: 1rem
+  .cart-count
+    position: absolute
+    font-size: 15px
+    right: 4px
+    top: 0px

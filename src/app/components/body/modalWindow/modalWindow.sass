@@ -1,0 +1,40 @@
+@import ../../../../index.sass
+
+.modal-wrap
+  z-index: 1
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  background-color: #767676
+  display: flex
+  justify-content: center
+  align-items: center
+.modal-window
+  width: 260px
+  height: 120px
+  background-color: $colorGray
+  border-radius: 5px
+  text-align: center
+  padding: 25px
+  line-height: 1.4rem
+.modal-button-wrap
+  display: block
+
+.btn
+  border: none
+  border-radius: 4px
+  box-shadow: 0 8px 13px 1px #00000025
+  transition: all 0.25s ease
+  cursor: pointer
+  &:hover
+    box-shadow: none
+  &-true, &-false
+    color: #ffffff
+    padding: 10px 40px
+    margin: 30px 10px 30px 10px
+  &-true
+    background-color: $colorPink
+  &-false
+    background-color: $colorBlueLight

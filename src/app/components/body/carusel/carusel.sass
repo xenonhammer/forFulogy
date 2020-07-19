@@ -1,0 +1,40 @@
+@import ../../../../index.sass
+
+.carusel
+  width: 100%
+  background-color: $colorGray
+  overflow: hidden
+  position: relative
+  &-items
+    display: flex
+    justify-content: center
+    align-content: center
+    flex-wrap: nowrap
+  &-item
+    flex: 0 0 461.0px
+    height: 384px
+    margin: 30px 50px
+    // width: 461.0px
+    border: none
+    border-radius: 5px
+    box-shadow: 0 8px 13px 1px #00000025
+    background-size: cover
+    transition: all 0.25s ease
+.switches
+  display: flex
+  position: absolute
+  bottom: 47px
+  left: 50%
+  transform: translate(-50%, -50%)
+  .switch
+    width: 6px
+    height: 6px
+    border: 1px solid #ffffff75
+    border-radius: 2px
+    margin: 0 5px
+    cursor: pointer
+    transition: background-color 0.25s ease
+  .active
+    background-color: #ffffff
+
+

@@ -1,9 +1,10 @@
-@import ../../../index.sass
+@import ../../../../index.sass
 
 .options
   width: 100%
   background-color: $colorGray
-  border: 1px solid #dddddd
+  border: 1px solid #e3e3e3
+  border-bottom: none
   &-specification
     margin: 0
     list-style: none
@@ -12,14 +13,25 @@
       display: flex
       justify-content: space-between
       margin: 10px 0
-      div 
+      div
         width: 190px
   &-class-dropdown
+    font-size: 14px
+    text-align: center
+    display: inline-block
+    width: 80px !important
     padding: 5px
     border: none
     border-radius: 5px
-    box-shadow: 0 4px 7px 1px darken($colorGray, 15%)
+    box-shadow: 0 3px 5px 1px #76767625
     outline: none
+    cursor: pointer
+    transition: box-shadow 0.25s ease
+    background-color: #f0f0f0
+    &:hover
+      box-shadow: none
+    &:active
+      background-color: transparent
 
   &-light-header
     display: flex
@@ -35,35 +47,47 @@
       border-color: transparent
       cursor: pointer
     &-text
+      font-size: 14px
       display: inline-block
       line-height: 58px
       width: 90%
   &-light-change
+    min-height: 75px
     padding: 0 40px
     list-style: none
     display: flex
-    justify-content: space-around
+    justify-content: center
     align-items: center
     margin: 30px 0
     position: relative
     &-foto
+      margin: 0 10px
       position: relative
       display: inline-block
-      width: 150px
-      height: 80px
-      background-color: green
+      width: 93.1px
+      height: 64.9px
+      background-size: cover
+      border-radius: 3px
+      transition: all 0.25s ease
+      cursor: pointer
+      &:hover
+        width: 103.7px
+        height: 71.8px
+        box-shadow: 0 8px 13px 1px #00000025
     &-title
       color: $colorWhite
       line-height: 1.5rem
       text-align: center
+      font-size: 12px
       position: absolute
       bottom: 0
       background-color: #00000079
       width: 100%
 
 .active
-  width: 160px
-  height: 90px
+  box-shadow: 0 8px 13px 1px #00000025
+  width: 103.7px
+  height: 71.8px
 .selected
   line-height: 20px
   color: $colorWhite
@@ -77,3 +101,8 @@
   border-radius: 3px
   font-size: 13px
   text-align: center
+
+.option-name
+  font-size: 12px
+.option-value
+  font-size: 14px
