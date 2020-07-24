@@ -12,7 +12,7 @@ export default class Options extends React.Component {
       <div className="options">
         <ul className="options-specification">
           <li>
-            <div lassName="option-name">Класс:</div>
+            <div className="option-name">Класс:</div>
             <div>
               <div 
                 className="options-class-dropdown"
